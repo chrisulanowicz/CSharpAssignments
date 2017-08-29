@@ -11,3 +11,4 @@ Order of assignments progressing from the basics to more advanced
   7. human
   8. deckOfCards
   9. wizardNinjaSamurai
+ 10. musicLinq
