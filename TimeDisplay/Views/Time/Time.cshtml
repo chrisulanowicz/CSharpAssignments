@@ -1,0 +1,16 @@
+@{
+    DateTime currentDate = DateTime.Now;
+    string current = String.Format("{0:MMM dd, yyyy hh:mm tt}", currentDate);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Time Display</title>
+</head>
+<body>
+    <h3>The current time and date:</h3>
+    <h1>@current</h1>
+</body>
+</html>

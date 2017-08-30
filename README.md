@@ -44,10 +44,13 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
 
  12. callingCard
       - setup a simple ASP.NET Core web app that takes in route parameters and returns a json object
+      - starts with just the 'C' (Controller) of 'MVC'
 
  13. RapperApi
       - create a basic API using the JsonData from the previous musicLinq assignment
       - practice with routes, route parameters, LINQ, JSON
 
-
+ 14. TimeDisplay
+      - simple web app that just displays the current date and time
+      - adds the 'V' (View) in 'MVC' along with the Razor View Engine
 
