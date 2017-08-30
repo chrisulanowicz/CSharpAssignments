@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio Projects</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li class="active">Projects</li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="projects">
+        <div class="project">
+            <img src="~/images/cobo_grad.png" alt="comic grading app" />
+            <h2>Cobo Grād</h2>
+            <p>A web application for comic book enthusiasts built around the idea of having an automated way to grade comic books. This is something that has been lacking for the longest time, and for good reason. This site is taking something subjective and trying to make it objective. Therefore this aspect is still being developed due to the complexity of the algorithms required to make it work - accurately. The site does also feature a community discussion forum where users can create topics, post and comment. The vision is to also incorporate several API's including eBay, Marvel, Facebook, and Google Maps as I integrate more features.</p>
+            <p>Cobo Grād is deployed through Amazon EC2 Web Services and built on the full MEAN stack utilizing MongoDB with Mongoose.js, Express.js, Angular.js, and Node.js.</p>
+        </div>
+        <div class="project">
+            <img src="~/images/firsthackdallas.png" alt="first hack dallas" />
+            <h2>First Hack Dallas</h2>
+            <p>An annual local hackathon for beginner developers with a focus on a project that benefits the local community. As a co-founder and co-organizer, I dealt in all aspects of hosting a hackathon, including acquiring sponsors, recruiting mentors, acquiring supplies, marketing, administrative duties, and most importantly, developing the website as part of a team working in an agile environment. I also took on the role of DevOps Engineer and handled all aspects of deploying the site, pushing live updates, domain management and setting up the e-mail system.</p>
+            <p>Site is built with Ruby on Rails using PostgreSQL for the database and Materialize as the CSS framework. Git and GitHub is used for version control and it is deployed through AWS EC2 using ubuntu. Email system uses AWS SES and S3 for storage.</p>
+        </div>
+        <div class="project">
+            <img src="~/images/acodingodyssey.png" alt="my blog" />
+            <h2>A Coding Odyssey</h2>
+            <p>A blog I started when I first decided to start coding as a career. Originally it was made to chronicle my journey as a coding newb through a coding bootcamp, where I posted almost daily, but has since gone past that. Blog is self-hosted and uses Wordpress as the CMS.</p>
+        </div>
+    </section>
+</body>
+</html>   

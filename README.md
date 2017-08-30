@@ -54,3 +54,6 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - simple web app that just displays the current date and time
       - adds the 'V' (View) in 'MVC' along with the Razor View Engine
 
+ 15. Portfolio
+      - basic multi-page website making use of static files
+      - Please ignore the ugly styling, this is a C# course, so I didn't want to spend a lot of time on CSS, only enough to make sure all static files are working properly

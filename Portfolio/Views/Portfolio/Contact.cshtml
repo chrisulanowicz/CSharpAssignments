@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Portfolio Contact</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li class="active">Contact</li>
+        </ul>
+    </nav>
+    <section id="contact">
+        <img src="~/images/email.png" alt="email icon" />
+        <fieldset>
+            <legend> Contact Me </legend>
+            <form action="#">
+                <label for="name">Your Name:
+                    <input type="text" id="name" name="name" />
+                </label>
+                <label for="subject">Subject:
+                    <input type="text" id="subject" name="subject" />
+                </label>
+                <label for="message">Message:
+                    <textarea id="message" name="message"></textarea>
+                </label>
+                <input type="submit" value="Send Message" />
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>
