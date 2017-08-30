@@ -39,7 +39,6 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
  		- implement basic CRUD queries
 
 
- ==================================================================
  SECTION II - ASP.NET CORE I
  ==================================================================
 
