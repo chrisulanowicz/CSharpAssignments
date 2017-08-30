@@ -32,15 +32,18 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
   		- create 3 new Human inherited classes with methods to interact with each other
 
  10. musicLinq
- 		- basic LINQ queries done on given JSON sets
+      - basic LINQ queries done on given JSON sets
 
  11. simpleCrudWithMySQL
- 		- connect to an existing MySQL database
- 		- implement basic CRUD queries
+      - connect to an existing MySQL database
+      - implement basic CRUD queries
 
 
  SECTION II - ASP.NET CORE I
  ==================================================================
 
- 12.
+ 12. callingCard
+      - setup a simple ASP.NET Core web app that takes in route parameters and returns a json object
+
+
 
