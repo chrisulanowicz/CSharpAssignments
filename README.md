@@ -45,5 +45,9 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
  12. callingCard
       - setup a simple ASP.NET Core web app that takes in route parameters and returns a json object
 
+ 13. RapperApi
+      - create a basic API using the JsonData from the previous musicLinq assignment
+      - practice with routes, route parameters, LINQ, JSON
+
 
 
