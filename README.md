@@ -1,8 +1,6 @@
 Index of C#/.NET assignments progressing from the basics to more advanced
 
-=================================================================
 SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
-=================================================================
 
   1. first_csharp
   		- beginning 'Hello World' app
@@ -42,7 +40,6 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
 
  ==================================================================
  SECTION II - ASP.NET CORE I
- ==================================================================
 
  12.
 
