@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#stats li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#status {
+    border: 1px solid black;
+    padding: 30px;
+    width: 50%;
+    margin: 30px auto;
+}
+
+#status img {
+    height: 200px;
+    width: 200px;
+}
+
+#status p {
+    margin-top: 40px;
+}
+
+a {
+    padding: 7px 17px;
+    background: linear-gradient(lightyellow, #FAFA56);
+    border-radius: 5px;
+    border: 1px solid yellow;
+    margin-right: 10px;
+}
+
+#game-start {
+    display: block;
+}
+
+#game-over {
+    display: none;
+}
+
+#happy {
+    margin: 0 auto;
+    display: block;
+}
+
+#sad {
+    margin: 0 auto;
+    display: none;
+}
+
+#dead {
+    margin: 0 auto;
+    display: none;
+}

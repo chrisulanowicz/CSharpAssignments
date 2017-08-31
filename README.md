@@ -66,3 +66,8 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - simple web app that generates a random password/passcode
       - introduces Session to keep count of passcodes generated
       - includes 2 generators, one requiring a server refresh and a second via AJAX using jQuery while still persisting count in Session
+
+ 18. DachiPet
+      - Virtual Pet game where you perform actions that affect your pet's attributes
+      - Builds on previous assignments and adds more complexity
+      - Practice with OOP, Classes, AJAX, jQuery, Session, VC of MVC, routes, JSON

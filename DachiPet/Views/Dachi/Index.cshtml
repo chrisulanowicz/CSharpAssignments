@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Dachi Pet</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/js/main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <ul id="stats">
+            <li id="fullness">Fullness: <span>@ViewBag.Dachi.Fullness</span></li>
+            <li id="happiness">Happiness: <span>@ViewBag.Dachi.Happiness</span></li>
+            <li id="meals">Meals: <span>@ViewBag.Dachi.Meals</span></li>
+            <li id="energy">Energy: <span>@ViewBag.Dachi.Energy</span></li>
+        </ul>
+        <div id="status">
+            <img id="happy" src="~/images/happy.png" alt="happy emoji" />
+            <img id="sad" src="~/images/sad.png" alt="sad emoji" />
+            <img id="dead" src="~/images/dead.png" alt="dead emoji" />
+            <p>@ViewBag.Dachi.Status</p>
+        </div>
+        <div id="game-start">
+            <a href="#" id="feed">Feed</a>
+            <a href="#" id="play">Play</a>
+            <a href="#" id="work">Work</a>
+            <a href="#" id="sleep">Sleep</a>
+        </div>
+        <div id="game-over">
+            <a href="/restart">Restart?</a>
+        </div>
+    </div>
+</body>
+</html>
