@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Random Passcode Generator</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="~/js/main.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h2>Random Passcode (passcode #<span id="attempt">@ViewBag.Attempt</span>)</h2>
+        <h1 id="code">@ViewBag.Code</h1>
+        <a href="/">Generate</a>
+        <a href="#" id="ajax">Generate via AJAX</a>
+    </div>
+</body>
+</html>

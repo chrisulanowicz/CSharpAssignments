@@ -62,4 +62,7 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - web app that takes some form data and then displays it on a separate view
       - practice with POST requests and sending data from the Controller to View with ViewBag
 
-
+ 17. RandomPasscode
+      - simple web app that generates a random password/passcode
+      - introduces Session to keep count of passcodes generated
+      - includes 2 generators, one requiring a server refresh and a second via AJAX using jQuery while still persisting count in Session

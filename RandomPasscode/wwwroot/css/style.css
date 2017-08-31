@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container {
+    width: 60%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+#container h1 {
+    margin: 40px 0;
+    padding: 14px 34px;
+    border: 1px solid black;
+}
+
+a {
+    color: black;
+    margin-top: 40px;
+    text-decoration: none;
+    padding: 7px 17px;
+    border-radius: 5px;
+    background: linear-gradient(lightblue, #0068FF);
+    border: 1px solid darkblue;
+}
