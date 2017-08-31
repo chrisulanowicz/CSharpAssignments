@@ -1,0 +1,20 @@
+* {
+    text-align: center;
+}
+
+form {
+    width: 30%;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+label {
+    display: block;
+    margin: 20px 10px;
+    text-align: left;
+}
+
+input, select, textarea {
+    float: right;
+}

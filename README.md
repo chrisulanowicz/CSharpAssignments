@@ -57,3 +57,9 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
  15. Portfolio
       - basic multi-page website making use of static files
       - Please ignore the ugly styling, this is a C# course, so I didn't want to spend a lot of time on CSS, only enough to make sure all static files are working properly
+
+ 16. SurveyForm
+      - web app that takes some form data and then displays it on a separate view
+      - practice with POST requests and sending data from the Controller to View with ViewBag
+
+

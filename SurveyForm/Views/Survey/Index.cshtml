@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <section id="survey">
+        <form action="/" method="post">
+            <label for="name">Your Name:
+                <input type="text" id="name" name="name" />
+            </label>
+            <label for="location">Your Location:
+                <input type="text" id="location" name="location" />
+            </label>
+            <label for="language">Your Language:
+                <select id="language" name="language">
+                    <option></option>
+                    <option>C#</option>
+                    <option>Java</option>
+                    <option>JavaScript</option>
+                    <option>PHP</option>
+                    <option>Python</option>
+                    <option>Ruby</option>
+                </select>
+            </label>
+            <label for="comment">Comment (optional):
+                <textarea id="comment" name="comment"></textarea>
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+    </section>
+</body>
+</html>
