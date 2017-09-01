@@ -71,6 +71,7 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - Virtual Pet game where you perform actions that affect your pet's attributes
       - Builds on previous assignments and adds more complexity
       - Practice with OOP, Classes, AJAX, jQuery, Session, VC of MVC, routes, JSON
+      - DEPLOYED LIVE ON AZURE   http://dachipet.azurewebsites.net/
 
 
  SECTION III - ASP.NET CORE II
@@ -81,4 +82,6 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - Project spun up using Yeoman Candyman
       - Implements View _Layout
 
-      
+ 20. AzureDeployments
+      - Text file with urls of deployed assignments on Azure
+      - Currently contains DachiPet
