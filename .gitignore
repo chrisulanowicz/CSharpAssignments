@@ -1,4 +1,27 @@
-.DS_Store
+# DIRECTORIES
+####################
 .vscode/
 bin/
 obj/
+wwwroot/lib/
+
+
+# OS FILES
+###################
+.DS_Store
+
+# PACKAGES
+##################
+*.dmg
+*.gz
+*.jar
+*.rar
+*.tar
+*.zip
+
+# LOGS/DATABASES
+#################
+*.log
+*.sqlite
+
+

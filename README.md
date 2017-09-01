@@ -71,3 +71,9 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - Virtual Pet game where you perform actions that affect your pet's attributes
       - Builds on previous assignments and adds more complexity
       - Practice with OOP, Classes, AJAX, jQuery, Session, VC of MVC, routes, JSON
+
+
+ SECTION III - ASP.NET CORE II
+ ==================================================================
+
+ 19. 
