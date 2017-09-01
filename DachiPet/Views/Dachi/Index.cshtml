@@ -30,6 +30,20 @@
         <div id="game-over">
             <a href="/restart">Restart?</a>
         </div>
+        <div id="about">
+            <p>Dachi Pet is a simple virtual pet game built in C# using the ASP.NET Core Framework with jQuery and AJAX.</p>
+            <button id="modal-button">How to Play</button>
+        </div>
+        <div id="my-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Your pet has 3 important stats, Fullness (as in not hungry), Happiness and Energy. Get each of these over 100 and you win.  Let any one of them fall to 0 though and your pet will die and you lose.</p>
+                <p><strong>Feed:</strong> Requires at least 1 available meal. Feeding your pet will increase its fullness anywhere between 5 and 10 points and use up 1 meal.  There is a chance your pet may not be feeling well and reject the meal, in which case no fullness is gained and 1 meal is still used up.</p>
+                <p><strong>Play:</strong> Playing with your pet will increase its happiness between 5 and 10 while using up 5 energy.  If your pet isn't in the mood to play no happiness is gained, but energy is still used up.</p>
+                <p><strong>Work:</strong> Working with your pet will earn between 1 to 3 meals and use up 5 energy</p>
+                <p><strong>Sleep:</strong> Whenever your pet sleeps it will gain 15 energy and wake up with 5 less fullness and 5 less happiness.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

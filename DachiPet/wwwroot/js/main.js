@@ -1,6 +1,6 @@
 $(function(){
     console.log("jQuery on");
-    var petName = prompt("Please name your pet!");
+    var petName = prompt("Welcome to Dachi Pet! Please name your Dachi!");
     console.log(petName);
     $.get("/setName/" + petName, function(response){
         console.log("changed pet name");
@@ -39,5 +39,34 @@ $(function(){
                 $("#dead").css("display", "none");
             }
         })
+    })
+
+    var modal = document.getElementById("my-modal");
+    // var button = document.getElementById("modal-button");
+    // var span = document.getElementsByClassName("close")[0];
+
+    // button.onclick = function(){
+    //     modal.style.display = "block";
+    // }
+    $("#modal-button").click(function(){
+        $(modal).css("display", "block");
+    })
+
+    // span.onclick = function(){
+    //     modal.style.display = "none";
+    // }
+    $(".close").click(function(){
+        $(modal).css("display", "none");
+    })
+
+    // window.onclick = function(event){
+    //     if(event.target == modal){
+    //         modal.style.display = "none";
+    //     }
+    // }
+    $(window).click(function(event){
+        if(event.target == modal){
+            $(modal).css("display", "none");
+        }
     })
 })
