@@ -76,4 +76,9 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
  SECTION III - ASP.NET CORE II
  ==================================================================
 
- 19. 
+ 19. PokemonInfo
+      - Displays info from an external API using Backend API calls
+      - Project spun up using Yeoman Candyman
+      - Implements View _Layout
+
+      
