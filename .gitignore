@@ -5,6 +5,10 @@ bin/
 obj/
 wwwroot/lib/
 
+# SENSITIVE FILES
+##################
+appsettings.json
+
 
 # OS FILES
 ###################

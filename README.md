@@ -90,3 +90,9 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - Connect to MySQL database
       - simple app that allows user to add a quote that's stored in db and view all quotes
 
+ 22. AJAX Notes
+      - app that allows user to add a note, edit it, and delete it
+      - adds rest of CRUD when connecting to database
+      - connection to database made more secure and involves Dependency Injection
+      - AJAX portion of assignment skipped for now due to time and need to focus on ASP.NET
+
