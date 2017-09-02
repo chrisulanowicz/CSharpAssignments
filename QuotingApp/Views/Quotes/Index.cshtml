@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Index Page";
+}
+
+<h1>Here are the awesome quotes!</h1>
+
+@foreach(var quote in ViewBag.Quotes)
+{
+    <div class="quote">
+        <h3>"@quote["quote"]"</h3>
+        <p> - @quote["name"] at @quote["created_at"]</p>
+    </div>
+}
+
+<a href="/">Create a Quote</a>

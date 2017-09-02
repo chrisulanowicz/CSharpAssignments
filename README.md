@@ -85,3 +85,8 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
  20. AzureDeployments
       - Text file with urls of deployed assignments on Azure
       - Currently contains DachiPet
+
+ 21. QuotingApp
+      - Connect to MySQL database
+      - simple app that allows user to add a quote that's stored in db and view all quotes
+
