@@ -96,3 +96,7 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - connection to database made more secure and involves Dependency Injection
       - AJAX portion of assignment skipped for now due to time and need to focus on ASP.NET
 
+ 23. Form Submission
+      - adds Models (M) to complete the MVC
+      - validates form inputs and either displays error messages or directs to success page
+      - uses DataAnnotations
