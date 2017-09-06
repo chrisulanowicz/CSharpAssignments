@@ -105,3 +105,9 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - Complete User Login & Registration form with full validations and error message display
       - Once validated User is saved in DB/logged in and sent to page that lists all users
       - Implements Frontend and Backend Model Binding plus tag helpers
+
+ 25. The Wall
+      - A Message Board app that allows users to post messages and comments to messages
+      - Includes a login & registration
+      - Combines prior exercises for a more complex web app
+      - Practice with MVC, Session, MySQL, DB Connection, Validations, Model Binding, etc.

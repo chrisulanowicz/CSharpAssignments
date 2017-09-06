@@ -1,0 +1,38 @@
+@model TheWall.Models.Post
+
+@{
+    ViewData["title"] = "Dashboard";
+}
+
+<h1>Welcome to the Wall, @ViewBag.UserName !</h1>
+<a href="/logout">Logout</a>
+
+<div id="main">
+    <form asp-controller="Posts" asp-action="Create" method="post">
+        <h2>Post a Message!</h2>
+        <p class="field-validation-error">@ViewBag.Error</p>
+        <textarea asp-for="Message" rows="5" cols="40"></textarea>
+        <input type="submit" value="Post Message" />
+    </form>
+    @foreach(var post in ViewBag.AllPosts)
+    {
+        <div class="post">
+            <h3>@post["FirstName"] @post["LastName"] - @post["CreatedAt"].ToString("d")</h3>
+            <p>@post["Message"]</p>
+            @foreach(var comment in post["comments"])
+            {
+            <div class="comment">
+                <h3>@comment["FirstName"] @comment["LastName"] - @comment["CreatedAt"].ToString("d")</h3>
+                <p>@comment["Content"]</p>
+            </div>
+            }
+
+            <form action="/comments" method="post">
+                <h3>Post a comment</h3>
+                <textarea name="Content" rows="4" cols="30"></textarea>
+                <input type="hidden" name="PostId" value='@post["Id"]' />
+                <input type="submit" value="Comment on this Message" />
+            </form>
+        </div>
+    }
+</div>
