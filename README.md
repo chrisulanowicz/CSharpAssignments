@@ -100,3 +100,8 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
       - adds Models (M) to complete the MVC
       - validates form inputs and either displays error messages or directs to success page
       - uses DataAnnotations
+
+ 24. Login and Registration
+      - Complete User Login & Registration form with full validations and error message display
+      - Once validated User is saved in DB/logged in and sent to page that lists all users
+      - Implements Frontend and Backend Model Binding plus tag helpers

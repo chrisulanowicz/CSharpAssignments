@@ -1,0 +1,29 @@
+@model LoginRegistration.Models.LoginViewModel
+
+@{
+    ViewData["title"] = "Login Page";
+}
+
+<!-- This line loops through all errors and displays them grouped together in a list -->
+<!-- <div asp-validation-summary="All"></div> -->
+
+<div id="log-reg">
+    <div id="login">
+        <h2>Login</h2>
+        <form asp-controller="Users" asp-action="LoginUser" method="post">
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" />
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" />
+                <span asp-validation-for="Password"></span>
+            </div>
+            <input type="submit" value="Login" />
+        </form>
+    </div>
+    <h3>Need to <a href="/">Register</a>?</h3>
+</div>
+
