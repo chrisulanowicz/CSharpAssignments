@@ -1,0 +1,18 @@
+@{
+    ViewData["title"] = "Reviews";
+}
+
+<div id="container">
+    <a href="/reviews/new">Add a Review!</a>
+   @foreach(var review in ViewBag.Reviews)
+   {
+    <div class="review">
+        <h3>Review for: @review.Restaurant &mdash; @review.Rating star</h3>
+        <h4>Reviewer: @review.Reviewer ate there @review.VisitDate.ToString("MMM d, yyyy")</h4>
+        <p>@review.ReviewBody</p>
+        <p>
+            <a href="/reviews/@review.Id/helpful">Helpful - @review.Helpful </a>  | <a href="/reviews/@review.Id/unhelpful">Not Helpful - @review.UnHelpful</a>  
+        </p>
+    </div>
+   }
+</div>
