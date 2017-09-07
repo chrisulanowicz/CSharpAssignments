@@ -119,6 +119,6 @@ SECTION IV - ORMS - ADDING ENTITY FRAMEWORK CORE TO ASP.NET CORE
  26. RESTauranter
       - simple app that allows users to leave reviews for restaurants
       - add Entity Framework Core basics* and custom validation
-      * Ran into roadblock. Course uses an Entity-MySql connector that doesn't work with ASP.NET Core version 2.0 which caused a MissingMethodException (exception wasn't too descriptive and took a while to figure out the version incompatability).  Eventually found another connector by Pomelo which does work.
+      - * Ran into roadblock. Course uses an Entity-MySql connector that doesn't work with ASP.NET Core version 2.0 which caused a MissingMethodException (exception wasn't too descriptive and took a while to figure out the version incompatability).  Eventually found another connector by Pomelo which does work.
 
 
