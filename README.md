@@ -121,4 +121,8 @@ SECTION IV - ORMS - ADDING ENTITY FRAMEWORK CORE TO ASP.NET CORE
       - add Entity Framework Core basics* and custom validation
       - * Ran into roadblock. Course uses an Entity-MySql connector that doesn't work with ASP.NET Core version 2.0 which caused a MissingMethodException (exception wasn't too descriptive and took a while to figure out the version incompatability).  Eventually found another connector by Pomelo which does work.
 
-
+ 27. BankAccounts
+      - app where users can register/login, open bank accounts and make transactions
+      - adds Entity Framework Relationships to the mix
+      - also added more features to registration/login along with password hashing
+      - ASP.NET Core 2.0, Entity Framework Core, MySQL

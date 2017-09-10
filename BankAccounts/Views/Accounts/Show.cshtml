@@ -1,0 +1,51 @@
+@model BankAccounts.Models.TransactionViewModel
+@using BankAccounts.Models
+@{
+    ViewData["title"] = ViewBag.Account.AccountType;
+}
+
+<div id="show-account">
+    <header>
+        <h1>Welcome, @ViewBag.UserName</h1>
+        <a href="/">Home</a>
+        <a href="/logout">Logout</a>
+    </header>
+    <h2>@ViewBag.Account.AccountType &mdash; Current balance: @ViewBag.Account.Balance.ToString("C")</h2>
+    <form asp-controller="Accounts" asp-action="Update" method="post">
+        <h3>Make a Transaction</h3>
+        <div class="form-group">
+            <label asp-for="TransactionType"></label>
+            <select asp-for="TransactionType" asp-items="Html.GetEnumSelectList<TransactionTypes>()">
+                <option selected></option>
+            </select>
+            <span asp-validation-for="TransactionType"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Amount"></label>
+            <input asp-for="Amount" />
+            <span asp-validation-for="Amount"></span>
+        </div>
+        <input type="hidden" name="_method" value="put" />
+        <input type="submit" value="Submit" /> 
+    </form>
+    <div class="grouping">
+        <h3>Previous Transactions</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach(var transaction in ViewBag.Transactions)
+            {
+                <tr>
+                    <td>@transaction.Amount.ToString("C")</td>
+                    <td>@transaction.CreatedAt.ToString("g")</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+@{
+    ViewData["title"] = "Accounts Page";
+}
+<header>
+    <h1>Welcome, @ViewBag.Username</h1>
+    <a href="/logout">Logout</a>
+</header>
+<div class="grouping">
+    <h2>Your Accounts</h2>
+    <a href="/accounts/new" class="button">Add a New Account</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Balance</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var account in ViewBag.Accounts)
+            {
+                <tr>
+                    <td><a href="/accounts/@account.Id">@account.AccountType</a></td>
+                    <td>@account.Balance.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
