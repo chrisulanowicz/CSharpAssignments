@@ -1,3 +1,5 @@
 List of assignments deployed live on Azure with urls
 
 Dachi Pet  =>   http://dachipet.azurewebsites.net/
+
+BankAccounts => http://bank-accounts.azurewebsites.net/

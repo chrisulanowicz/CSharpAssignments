@@ -84,7 +84,7 @@ SECTION I - C#/.NET FUNDAMENTALS  (in Console Applications)
 
  20. AzureDeployments
       - Text file with urls of deployed assignments on Azure
-      - Currently contains DachiPet
+      - Currently contains DachiPet and BankAccounts
 
  21. QuotingApp
       - Connect to MySQL database
@@ -126,3 +126,4 @@ SECTION IV - ORMS - ADDING ENTITY FRAMEWORK CORE TO ASP.NET CORE
       - adds Entity Framework Relationships to the mix
       - also added more features to registration/login along with password hashing
       - ASP.NET Core 2.0, Entity Framework Core, MySQL
+      - DEPLOYED LIVE ON AZURE   http://bank-accounts.azurewebsites.net/
