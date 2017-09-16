@@ -1,0 +1,57 @@
+@model WeddingPlanner.Models.WeddingViewModel
+@using WeddingPlanner.Models;
+@{
+    ViewData["title"] = "Add Wedding";
+}
+<header>
+    <h1>Plan Your Wedding</h1>
+    <a href="/">Home</a>
+    <a href="/logout">Logout</a>
+</header>
+<div id="new-wedding">
+    <form asp-controller="Weddings" asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="Partner1"></label>
+            <input asp-for="Partner1" />
+            <span asp-validation-for="Partner1"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Partner2"></label>
+            <input asp-for="Partner2" />
+            <span asp-validation-for="Partner2"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="WeddingDate"></label>
+            <input asp-for="WeddingDate" />
+            <span asp-validation-for="WeddingDate"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address1"></label>
+            <input asp-for="Address1" />
+            <span asp-validation-for="Address1"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address2"></label>
+            <input asp-for="Address2" />
+            <span asp-validation-for="Address2"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="City"></label>
+            <input asp-for="City" />
+            <span asp-validation-for="City"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="State"></label>
+            <select asp-for="State" asp-items="Html.GetEnumSelectList<StateList>()">
+                <option selected="selected"></option>
+            </select>
+            <span asp-validation-for="State"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Zip"></label>
+            <input asp-for="Zip" />
+            <span asp-validation-for="Zip"></span>
+        </div>
+        <input type="submit" value="Plan Wedding" />
+    </form>
+</div>

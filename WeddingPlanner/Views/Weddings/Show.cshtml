@@ -1,0 +1,20 @@
+@using WeddingPlanner.Models
+@{
+    ViewData["title"] = "Wedding";
+}
+
+<div id="show-wedding">
+    <header>
+        <h1>@ViewBag.Wedding.Partner1 and @ViewBag.Wedding.Partner2 's Wedding</h1>
+        <a href="/">Home</a>
+        <a href="/logout">Logout</a>
+    </header>
+    <h2>@ViewBag.Wedding.WeddingDate.ToString("MMMM dd, yyyy")</h2>
+    <h2>Guests:</h2>
+    <ul>
+        @foreach(var attendee in ViewBag.Wedding.Attendees)
+        {
+            <li>@attendee.User.FirstName @attendee.User.LastName</li>
+        }
+    </ul>
+</div>

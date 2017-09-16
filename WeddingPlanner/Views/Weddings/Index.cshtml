@@ -1,0 +1,57 @@
+@using WeddingPlanner.Models;
+@{
+    ViewData["title"] = "Weddings Page";
+}
+<header>
+    <h1>Welcome, @ViewBag.FirstName</h1>
+    <a href="/logout">Logout</a>
+</header>
+<div class="grouping">
+    <h2>Upcoming Weddings</h2>
+    <a href="/weddings/new" class="button">Plan a New Wedding</a>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Wedding</th>
+                <th>Date</th>
+                <th>No. of Guests</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var wedding in ViewBag.Weddings)
+            {
+                bool rsvpd = false;
+                <tr>
+                    <td><a href="weddings/@wedding.Id">@wedding.Partner1 & @wedding.Partner2</a></td>
+                    <td>@wedding.WeddingDate.ToString("MMMM dd, yyyy")</td>
+                    <td>@wedding.Attendees.Count</td>
+                    <td>
+                    @if(@wedding.UserId == @ViewBag.UserId)
+                    {
+                        <a href="/weddings/@wedding.Id/delete">Cancel</a>
+                    }
+                    else
+                    {
+                        @foreach(var attendee in wedding.Attendees)
+                        {
+                            if(attendee.UserId == ViewBag.UserId)
+                            {
+                                rsvpd = true;
+                            }
+                        }
+                        @if(rsvpd)
+                        {
+                            <a href="/attendees/@wedding.Id/delete">Un-rsvp</a>
+                        }
+                        else
+                        {
+                            <a href="/attendees/@wedding.Id">RSVP</a>
+                        }
+                    }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
