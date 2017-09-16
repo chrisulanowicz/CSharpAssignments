@@ -127,3 +127,7 @@ SECTION IV - ORMS - ADDING ENTITY FRAMEWORK CORE TO ASP.NET CORE
       - also added more features to registration/login along with password hashing
       - ASP.NET Core 2.0, Entity Framework Core, MySQL
       - DEPLOYED LIVE ON AZURE   http://bank-accounts.azurewebsites.net/
+
+ 28. WeddingPlanner
+      - app that keeps track of weddings, allowing users to plan a wedding, RSVP to a wedding or cancel the RSVP
+      - Uses Entity Code First Migrations with PostgreSQL database
