@@ -9,7 +9,7 @@ header {
 }
 header h1, .grouping h2 {
     display: inline-block;
-    margin-right: 50%;
+    margin-right: 40%;
     margin-bottom: 20px;
 }
 header a {

@@ -34,8 +34,16 @@ namespace WeddingPlanner.Controllers
             {
                 ViewBag.Firstname = HttpContext.Session.GetString("FirstName");
                 ViewBag.UserId = HttpContext.Session.GetInt32("UserId");
-                // List<Wedding> AllWeddings = _context.Weddings.Where(wedding => account.UserId == (int)HttpContext.Session.GetInt32("UserId")).ToList();
                 List<Wedding> AllWeddings = _context.Weddings.Include(wedding => wedding.Attendees).ToList();
+                foreach(var wedding in AllWeddings)
+                {
+                    if(wedding.WeddingDate < DateTime.Now)
+                    {
+                        AllWeddings.Remove(wedding);
+                        _context.Weddings.Remove(wedding);
+                    }
+                }
+                _context.SaveChanges();
                 ViewBag.Weddings = AllWeddings;
                 return View();
             }
@@ -92,52 +100,24 @@ namespace WeddingPlanner.Controllers
             }
             Wedding ThisWedding = _context.Weddings.Include(wedding => wedding.Attendees).ThenInclude(attendee => attendee.User).SingleOrDefault(wedding => wedding.Id == weddingId);
             ViewBag.Wedding = ThisWedding;
-            // ViewBag.Firstname = HttpContext.Session.GetString("FirstName");
-            // ViewBag.UserId = HttpContext.Session.GetInt32("UserId");
             return View();
         }
 
+        [HttpGet]
+        [Route("weddings/{weddingId}/delete")]
+        public IActionResult Destroy(int weddingId)
+        {
+            Wedding MyWedding = _context.Weddings.SingleOrDefault(wedding => wedding.Id == weddingId);
+            _context.Weddings.Remove(MyWedding);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        // placeholder route for now
         [HttpPost]
         [Route("weddings/{weddingId}")]
         public IActionResult Update(int weddingId, WeddingViewModel model)
         {
-            // Account UserAccount = _context.Accounts.SingleOrDefault(account => account.Id == accountId);
-            // if(!ModelState.IsValid || model.TransactionType.ToString() == "Withdraw" && UserAccount.Balance < model.Amount)
-            // {
-            //     if(ModelState.IsValid)
-            //     {
-            //         ModelState.AddModelError("Amount", "Insufficient Funds");
-            //     }
-            //     List<Transaction> UserTransactions = _context.Transactions.Where(transaction => transaction.AccountId == accountId).OrderByDescending(transaction => transaction.UpdatedAt).ToList();
-            //     ViewBag.Account = UserAccount;
-            //     ViewBag.Username = HttpContext.Session.GetString("UserName");
-            //     ViewBag.UserId = HttpContext.Session.GetInt32("UserId");
-            //     ViewBag.Transactions = UserTransactions;
-            //     return View("Show", model);
-            // }
-
-            // if(model.TransactionType.ToString() == "Deposit")
-            // {
-            //     UserAccount.Balance += model.Amount;
-            // }
-            // else
-            // {
-            //     UserAccount.Balance -= model.Amount;
-            //     model.Amount = -model.Amount;
-            // }
-
-            // UserAccount.UpdatedAt = DateTime.Now;
-            // Transaction NewTransaction = new Transaction
-            // {
-            //     UserId = (int)HttpContext.Session.GetInt32("UserId"),
-            //     AccountId = accountId,
-            //     Amount = model.Amount,
-            //     CreatedAt = DateTime.Now,
-            //     UpdatedAt = DateTime.Now
-            // };
-            // _context.Transactions.Add(NewTransaction);
-            // _context.SaveChanges();
-            // return RedirectToAction("Show", new { AccountId = accountId });
             return RedirectToAction("Index");
         }
 
